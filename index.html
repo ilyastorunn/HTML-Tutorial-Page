@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Technical Documentation Page">
+        <meta name="description" content="HTML, CSS">
+        <title>HTML Tutorial</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+        crossorigin="anonymous">
+        <link rel="preconnect" 
+        href="https://fonts.googleapis.com">
+        <link rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header id="title">HTML Tutorial</header>
+            <ul id="navbar-ul">
+                <li>
+                    <a href="#What_Is_HTML" class="nav-links, list-group-item list-group-item-action">What Is HTML</a>
+                <hr></hr>
+                </li>
+                <li>
+                    <a href="#Elements" class="nav-links, list-group-item list-group-item-action">Elements</a>
+                <hr></hr>
+                </li>
+                <li>
+                    <a href="#HTML_History" class="nav-links, list-group-item list-group-item-action">HTML History</a>
+                <hr></hr>
+                </li>
+                <li>
+                    <a href="#Styles" class="nav-links, list-group-item list-group-item-action">Styles</a>
+                <hr></hr>
+                </li>
+                <li>
+                    <a href="#Links" class="nav-links, list-group-item list-group-item-action">Links</a>
+                <hr></hr>
+                </li>
+                <li>
+                    <a href="#Images" class="nav-links, list-group-item list-group-item-action">Images</a>
+                <hr></hr>
+                </li>
+                <li>
+                    <a href="#Lists" class="nav-links, list-group-item list-group-item-action">Lists</a>
+                <hr></hr>
+                </li>
+                <li>
+                    <a href="#Tag_List" class="nav-links, list-group-item list-group-item-action">Tag List</a>
+                <hr></hr>
+                </li>
+                <li>
+                    <a href="#meta_Tags" class="nav-links, list-group-item list-group-item-action">Meta Tags</a>
+                <hr></hr>
+                </li>
+                <li>
+                    <a href="#Reference" class="nav-links, list-group-item list-group-item-action">Reference</a>
+                </li>
+                <hr></hr>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="What_Is_HTML">
+                <header id="one">What Is HTML?</header>
+                <article>
+                    <p>
+                        HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.
+                    </p>
+                    <p>
+                        HTML has a lot of use cases, namely:
+                    </p>
+                    <ul>
+                        <li>
+                            Web development. Developers use HTML code to design how a browser displays web page elements, such as text, hyperlinks, and media files. 
+                        </li>
+                        <li>
+                            Internet navigation. Users can easily navigate and insert links between related pages and websites as HTML is heavily used to embed hyperlinks. 
+                        </li>
+                        <li>
+                            Web documentation. HTML makes it possible to organize and format documents, similarly to Microsoft Word.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <hr></hr>
+            <section class="main-section" id="Elements">
+                <header id="two">Elements</header>
+                <article>
+                    <p>
+                        As is generally understood, the position of an element is indicated as spanning from a start tag and is terminated by an end tag. This is the case for many, but not all, elements within an HTML document. The distinction is explicitly emphasised in HTML 4.01 Specification:
+                    </p>
+                    <ul>
+                        <li>
+                            Elements are not tags. Some people refer to elements as tags (e.g., "the P tag"). Remember that the element is one thing, and the tag (be it start or end tag) is another. For instance, the HEAD element is always present, even though both start and end HEAD tags may be missing in the markup.
+                        </li>
+                    </ul>
+                    <p>
+                        Similarly the W3C Recommendadtion HTML 5.1 2nd Edition explicitly says:
+                    </p>
+                    <ul>
+                        <li>
+                            Tags are used to delimit the start and end of elements in the markup. (...) The start and end tags of certain normal elements can be omitted, (...)
+The contents of the element must be placed between just after the start tag (which might be implied, in certain cases) and just before the end tag (which again, might be implied, in certain cases).
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <hr></hr>
+            <section class="main-section" id="HTML_History">
+                <header>HTML History</header>
+                <article>
+                    <p>
+                        he first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999.
+                    </p>
+                    <p>
+                        Another version, XHTML, was a rewrite of HTML as an XML language. XML is a standard markup language that is used to create other markup languages. Hundreds of XML languages are in use today, including GML (Geography Markup Language), MathML, MusicML, and RSS (Really Simple Syndication). Since each of these languages was written in a common language (XML), their content can easily be shared across applications. This makes XML potentially very powerful, and it's no surprise that the W3C would create an XML version of HTML (again, called XHTML). XHTML became an official standard in 2000, and was updated in 2002. XHTML is very similar to HTML, but has stricter rules. Strict rules are necessary for all XML languages, because without it, interoperability between applications would be impossible. You'll learn more about the differences between HTML and XHTML in Unit 2.
+                    </p>
+                    <p>
+                        Most pages on the Web today were built using either HTML 4.01 or XHTML 1.0. However, in recent years, the W3C (in collaboration with another organization, the WHATWG), has been working on a brand new version of HTML, HTML5. Currently (2011), HTML5 is still a draft specification, and is not yet an official standard. However, it is already widely supported by browsers and other web-enabled devices, and is the way of the future. Therefore, HTML5 is the primary language taught in this course.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Styles">
+                <header>Styles</header>
+                <article>
+                    <p>
+                        The style HTML element contains style information for a document, or part of a document. It contains CSS, which is applied to the contents of the document containing the style element.
+                    </p>
+                    <p>
+                        The style element must be included inside the head of the document. In general, it is better to put your styles in external stylesheets and apply them using link elements.
+                    </p>
+                    <p>
+                        If you include multiple style and link elements in your document, they will be applied to the DOM in the order they are included in the document — make sure you include them in the correct order, to avoid unexpected cascade issues.
+                    </p>
+                    <p>
+                        In the same manner as link elements, style elements can include media attributes that contain media queries, allowing you to selectively apply internal stylesheets to your document depending on media features such as viewport width.
+                    </p>
+                </article>
+            </section>
+            <hr></hr>
+            <section class="main-section" id="Links">
+                <header>Links</header>
+                <article>
+                    <p>
+                        A link or hyperlink is a connection from one web resource to another. Links allow users to move seamlessly from one page to another, on any server anywhere in the world.
+                    </p>
+                    <p>
+                        A link has two ends, called anchors. The link starts at the source anchor and points to the destination anchor, which may be any web resource, for example, an image, an audio or video clip, a PDF file, an HTML document or an element within the document itself, and so on.
+                    </p>
+                    <p>
+                        By default, links will appear as follow in most of the browsers:
+                    </p>
+                    <ul>
+                        <li>
+                            An unvisited link is underlined and blue.
+                        </li>
+                        <li>
+                            A visited link is underlined and purple.
+                        </li>
+                        <li>
+                            An active link is underlined and red.
+                        </li>
+                    </ul>
+                    <p>
+                        However, you can overwrite this using CSS.
+                    </p>
+                </article>
+            </section>
+            <hr></hr>
+            <section class="main-section" id="Images">
+                <header>Images</header>
+                <article>
+                    <p>
+                        In the beginning, the Web was just text, and it was really quite boring. Fortunately, it wasn't too long before the ability to embed images (and other more interesting types of content) inside web pages was added. There are other types of multimedia to consider, but it is logical to start with the humble img element, used to embed a simple image in a webpage. In this article we'll look at how to use it in depth, including the basics, annotating it with captions using figure, and detailing how it relates to CSS background images.
+                    </p>
+                    <p>
+                        In order to put a simple image on a web page, we use the img element. This is a void element (meaning, it cannot have any child content and cannot have an end tag) that requires two attributes to be useful: src and alt. The src attribute contains a URL pointing to the image you want to embed in the page. As with thehref attribute for a elements, the src attribute can be a relative URL or an absolute URL. Without a src attribute, an img element has no image to load.
+                    </p>
+                </article>
+            </section>
+            <hr></hr>
+            <section class="main-section" id="Lists">
+                <header>Lists</header>
+                <article>
+                    <p>
+                        HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. Lists may contain −
+                    </p>
+                    <ul>
+                        <li>
+                            ul: An unordered list. This will list items using plain bullets.
+                        </li>
+                        <li>
+                            ol: An ordered list. This will use different schemes of numbers to list your items.
+                        </li>
+                        <li>
+                            dl: A definition list. This arranges your items in the same way as they are arranged in a dictionary.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <hr></hr>
+            <section class="main-section" id="Tag_List">
+                <header>Tag List</header>
+                <article>
+                    <p>
+                        HTML tags are like keywords which defines that how web browser will format and display the content. With the help of tags, a web browser can distinguish between an HTML content and a simple content. HTML tags contain three main parts: opening tag, content and closing tag. But some HTML tags are unclosed tags.
+                    </p>
+                    <p>
+                        When a web browser reads an HTML document, browser reads it from top to bottom and left to right. HTML tags are used to create HTML documents and render their properties. Each HTML tags have different properties.
+                    </p>
+                    <p>
+                        An HTML file must have some essential tags so that web browser can differentiate between a simple text and HTML text. You can use as many tags you want as per your code requirement:
+                    </p>
+                    <ul>
+                        <li>
+                            All HTML tags must enclosed within "< >" these brackets.
+                        </li>
+                        <li>
+                            Every tag in HTML perform different tasks.
+                        </li>
+                    </ul>
+                    <p>
+                        You can access all tags in HTML from this link:
+                        <a class="other-links" href="https://www.w3schools.com/TAGS/default.asp" target="_blank">W3schools tag list</a>
+                    </p>
+                </article>
+            </section>
+            <hr></hr>
+            <section class="main-section" id="meta_Tags">
+                <header>Meta Tags</header>
+                <article>
+                    <p>
+                        The meta tag defines metadata about an HTML document. Metadata is data (information) about data.
+                    </p>
+                    <p>
+                        meta tags always go inside the head element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+                    </p>
+                    <p>
+                        Metadata will not be displayed on the page, but is machine parsable.
+                    </p>
+                    <p>
+                        Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+                    </p>
+                    <p>
+                        There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the meta tag.
+                    </p>
+                    <p>
+                        Define keywords for search engines:
+                    </p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            meta name="keywords" content="HTML, CSS, JavaScript"
+                        </li>
+                    </ul>
+                    <p class="meta-description">
+                        Define a description of your web page:
+                    </p>
+                    <ul class="list-group"> 
+                        <li class="list-group-item">
+                            meta name="description" content="Free Web tutorials for HTML and CSS"
+                        </li>
+                    </ul>
+                    <p class="meta-description">
+                        Define the author of a page:
+                    </p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            meta name="author" content="John Doe"
+                        </li>
+                    </ul>
+                    <p class="meta-description">
+                    Refresh document every 30 seconds:
+                    </p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            meta http-equiv="refresh" content="30"
+                        </li>
+                    </ul>
+                    <p class="meta-description">
+                        Setting the viewport to make your website look good on all devices:
+                    </p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            meta name="viewport" content="width=device-width, initial-scale=1.0"
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <hr></hr>
+            <section class="main-section" id="Reference">
+                <header>Section</header>
+                <article>
+                    <p>
+                        All the documents were taken from the following sites: <br></br>
+                        <ul class="list-group" id="reference-links">
+                        <li class="list-group-item list-group-item-action"><a class="other-links" href="https://www.w3schools.com/html/default.asp" target="_blank">W3S</a></li> <br></br>
+                        <li class="list-group-item list-group-item-action"><a class="other-links" href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a></li> <br></br>
+                        <li class="list-group-item list-group-item-action"><a class="other-links" href="https://www.tutorialspoint.com/html/index.htm">TS</a></li>
+                        </ul>
+                    </p>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

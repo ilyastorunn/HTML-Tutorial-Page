@@ -1,0 +1,50 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-links:link{
+    text-decoration: none;
+    background-color: wheat;
+    padding: 7px 15px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.nav-links:hover {
+color: hotpink;
+}
+#title {
+    text-align: center;
+    font-size: larger;
+    background-color: grey;
+    color: white;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+#navbar {
+    background-color: grey;
+    color: white;
+    text-align: left;
+}
+#main-doc {
+    margin-left: 30px;
+}
+header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.other-links:link {
+    text-decoration: none;
+    background-color: white;
+    padding: 7px 15px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(56, 44, 44);
+}
+.other-links:hover {
+color: rgb(54, 44, 44);
+}
+.meta-description {
+    padding-top: 15px;
+    padding-bottom: 2px;
+}
